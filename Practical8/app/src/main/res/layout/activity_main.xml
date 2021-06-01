@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scrollbars="vertical" >
+    <TableLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:shrinkColumns="*" android:stretchColumns="*" android:background="#000000">
+
+        <TableRow android:layout_height="wrap_content" android:layout_width="match_parent" android:gravity="center_horizontal">
+            <TextView android:id="@+id/Title"
+                android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5px" android:focusable="false" android:focusableInTouchMode="false" android:gravity="center_vertical|center_horizontal" android:text="QUIZ"
+                android:textSize="25sp" android:textStyle="bold" />
+            <View android:layout_height="2px" android:layout_marginTop="5dip"
+                android:layout_marginBottom="5dip" android:background="#DDFFDD"/>
+        </TableRow>
+        <TableRow android:layout_height="wrap_content" android:layout_width="match_parent" android:gravity="center_horizontal">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="18sp" android:text="1.CAPTIAL OF INDIA" android:layout_span="4" android:padding="18dip" android:textColor="#ffffff"/>
+        </TableRow>
+        <TableRow android:id="@+id/tableRow1" android:layout_height="wrap_content" android:layout_width="match_parent">
+            <RadioGroup android:id="@+id/answer1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0.4" >
+                <RadioButton android:id="@+id/answer1A" android:layout_width="match_parent" android:layout_height="wrap_content"
+
+                    android:textColor="#ffffff" android:text="CHENNAI" />
+                <RadioButton android:id="@+id/answer1B" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="#ffffff" android:text="NEW DELHI" />
+                <RadioButton android:id="@+id/answer1C" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="#ffffff" android:text="MUMBAI" />
+                <RadioButton android:id="@+id/answer1D" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="#ffffff" android:text="HYDERBAD" />
+            </RadioGroup>
+        </TableRow>
+        <TableRow android:layout_height="wrap_content" android:layout_width="match_parent" android:gravity="center_horizontal">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="18sp"
+                android:text="2. CAPTIAL OF RUSSIA?" android:layout_span="4" android:padding="18dip"
+                android:textColor="#ffffff"/>
+        </TableRow>
+        <TableRow android:id="@+id/tableRow2" android:layout_height="wrap_content" android:layout_width="match_parent">
+            <RadioGroup android:id="@+id/answer2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0.4" >
+                <RadioButton android:id="@+id/answer2A" android:layout_width="match_parent" android:layout_height="wrap_content"
+
+                    android:textColor="#ffffff" android:text="WARSAW " />
+                <RadioButton android:id="@+id/answer2B" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="#ffffff" android:text="BERLIN" />
+                <RadioButton android:id="@+id/answer2C" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="#ffffff" android:text="MASCOW" />
+                <RadioButton android:id="@+id/answer2D" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="#ffffff" android:text="CANEBRA" />
+            </RadioGroup>
+        </TableRow>
+        <TableRow>
+        <Button android:id="@+id/submit"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center" android:text="Submit" />
+    </TableRow>
+</TableLayout>
+    </ScrollView>
